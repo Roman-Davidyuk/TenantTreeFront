@@ -14,6 +14,9 @@ const Layout = () => {
           <li>
             <a href="/register">Register</a>
           </li>
+          <li>
+            <a href="/accommodationType">accommodationType</a>
+          </li>
         </ul>
       </nav>
       <div class="content">
