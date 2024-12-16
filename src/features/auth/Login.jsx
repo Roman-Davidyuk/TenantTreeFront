@@ -1,6 +1,6 @@
 import React from "react";
 import { jwtDecode } from "jwt-decode";
-import { UserService } from "../../services/user.service";
+import { UserService } from "./services/user.service";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const Login = () => {
@@ -27,9 +27,9 @@ const Login = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
+      <label htmlFor="email">
         Email:
-        <input type="email" name="email" required />
+        <input id="email" type="email" name="email" required />
       </label>
       <label>
         Password:
